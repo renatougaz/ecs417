@@ -10,7 +10,7 @@
 
     echo '<script>
       if(!alert("Connection error, please try again later")){
-        location.replace("index.php/");
+        location.replace("index.php");
       }
     </script>';
 
@@ -18,10 +18,8 @@
   else{
     $username = $_POST["username"];
     $password = $_POST["password"];
-
     $sql = "SELECT pass FROM logins WHERE name = '$username' AND pass = '$password'";
     $result = $conn -> query($sql);
-    $row = $result-> fetch_assoc();
     if ($result->num_rows > 0){
       session_start();
       $_SESSION["username"] = $username;
@@ -36,6 +34,7 @@
       </script>';
 
     }
+    $conn->close();
   }
 
 

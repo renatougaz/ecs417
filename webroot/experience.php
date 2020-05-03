@@ -46,20 +46,17 @@ else{
     <br>
 
     <article class="main">
-      <section id="myself"class="nopad">
-        <h3>About myself</h3>
-        <p >
-          My full name is Renato Jesus Ugaz Huaringa and I am a Computer Science student at Queen Mary University of London.<br>
-          I was born and raised in Lima, Peru in the suburbs of La molina district.<br>
-          My family moved to London when I was 15 and have been living there since.<br><br>
-          Since an early age I have been interested in Computers and their potential,
-          ranging from loving IT at school to actively trying to achiveve further things
-          at home with a computers CS is one of my main passions in life.<br>
-          I starting programming with Python and have good control over the language, moreover I have basic knowledge in VisualBasic and MySQL.<br><br>
-          Java is my main current programming language which I feel more confident programming on.<br>
-          I love playing table tennis, it is one of those activies that I cannot get tired of.<br>
-          Currently, I am looking forward to working in backend development project.<br>
-        </p>
+
+      <section id="experience" class="nopad">
+        <h3>Experience</h3><br>
+         <p>
+           Since primary schools I have achieved outstanding grades in school and have taken part on various extracurricular activities.<br><br>
+           I have participated in various MUN (Model United nations),STEM clubs and tutortings schemes.<br>
+           In regard with Computer Science, I have been able to assemble my own PC and troubleshoot many of my friends' issues due to my constant online research on the area.<br>
+           On top of this, I have multiple programming hours using different languages on my belt.<br>
+         </p>
+
+
       </section>
 
   </article>
