@@ -1,9 +1,9 @@
 <?php
 
-  $servername = "localhost";
-  $dbuser = "root";
-  $dbpassword = "password";
-  $dbname = "mini";
+  $servername = getenv("MYSQL_SERVICE_HOST");
+  $dbuser = getenv("DATABASE_USER");
+  $dbpassword = getenv("DATABASE_PASSWORD");
+  $dbname = getenv("DATABASE_NAME");
   $conn = new mysqli($servername, $dbuser,$dbpassword,$dbname);
 
   if ($conn->connect_error){
