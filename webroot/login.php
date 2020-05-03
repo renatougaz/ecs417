@@ -18,7 +18,7 @@
   else{
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $sql = "SELECT pass FROM logins WHERE name = '$username' AND pass = '$password'";
+    $sql = "SELECT pass FROM LOGINS WHERE name = '$username' AND pass = '$password'";
     $result = $conn -> query($sql);
     if ($result->num_rows > 0){
       session_start();

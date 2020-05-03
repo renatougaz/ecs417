@@ -1,14 +1,22 @@
 
 <?php
 session_start();
-if (!isset($_SESSION["username"])){
-    echo '<script>
-    if(!alert("Plase login first")){
-      location.replace("index.php");
-    }
-  </script>';
+if(isset($_SESSION["statusbox"]) and (isset($_SESSION["username"]))){
+    $statusbox = $_SESSION["statusbox"];
 }
- $statusbox = $_SESSION["statusbox"];
+else{
+  $statusbox = '<h4>Blog login</h4><br>
+  <section>
+    <form class="login" action="login.php" method="post">
+      <label for="username">Username:</label><br>
+      <input type="email" name="username" required><br>
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" required maxlength="15"><br>
+      <input type="submit" name="login" value="Log in"class="button">
+    </form>
+    </section>';
+  session_destroy();
+}
 
  $servername = getenv("MYSQL_SERVICE_HOST");
  $dbuser = getenv("DATABASE_USER");
