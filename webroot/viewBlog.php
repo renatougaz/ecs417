@@ -3,8 +3,10 @@
 session_start();
 if(isset($_SESSION["statusbox"]) and (isset($_SESSION["username"]))){
     $statusbox = $_SESSION["statusbox"];
+    $newbutton = "<a href="addPost.php" class="button" id="newentry">New entry </a>";
 }
 else{
+  $newbutton = "";
   $statusbox = '<h4>Blog login</h4><br>
   <section>
     <form class="login" action="login.php" method="post">
@@ -115,7 +117,9 @@ else{
     </ul>
   </nav>
   <article class="main">
-    <a href="addPost.php" class="button" id="newentry">New entry </a>
+    <?php
+    echo $newbutton;
+     ?>
 
     <div class="date">
     <form action="viewBlog.php" method="post" >
