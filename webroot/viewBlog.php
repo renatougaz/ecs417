@@ -3,7 +3,7 @@
 session_start();
 if(isset($_SESSION["statusbox"]) and (isset($_SESSION["username"]))){
     $statusbox = $_SESSION["statusbox"];
-    $newbutton = "<a href="addPost.php" class="button" id="newentry">New entry </a>";
+    $newbutton = '<a href="addPost.php" class="button" id="newentry">New entry </a>';
 }
 else{
   $newbutton = "";
